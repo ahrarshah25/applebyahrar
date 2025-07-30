@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    background-color: #f5f5f7;
+    color: #000;
+}
+
+/* Navbar */
+.navbar {
+    background-color: white;
+    padding: 15px 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #0071e3;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 100px 20px;
+    overflow: hidden;
+    background-color: #e5f1fb;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    color: #0071e3;
+}
+
+.hero-text .subtext {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #0071e3;
+}
+
+.hero-text h2 {
+    font-size: 28px;
+    margin-top: 20px;
+    color: #0071e3;
+}
+
+.hero-text button {
+    margin-top: 30px;
+    padding: 10px 25px;
+    border: 2px solid #0071e3;
+    background-color: transparent;
+    color: #0071e3;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.hero-text button:hover {
+    background-color: #0071e3;
+    color: #fff;
+}
+
+.background-icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.2;
+}
+
+.background-icons img {
+    width: 120px;
+    margin: 20px;
+}
+
+/* Product Section (MacBook & iPhone) */
+.product-section {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.product-title {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.product-sub {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.product-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.primary {
+    background-color: #0071e3;
+    color: white;
+    border: none;
+}
+
+.primary:hover {
+    background-color: #005bb5;
+}
+
+.outline {
+    border: 1px solid #0071e3;
+    color: #0071e3;
+    background-color: transparent;
+}
+
+.outline:hover {
+    background-color: #0071e3;
+    color: white;
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
+.intel-text {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #888;
+}
+
+.intel-text span {
+    font-weight: 500;
+    background: linear-gradient(to right, blue, purple, red, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.light-bg {
+    background-color: #f5f5f7;
+}
+
+.dark-text {
+    color: #1d1d1f;
+}
+
+/* Dual Product: iPad Pro & AirPods Pro */
+.dual-product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #000;
+    padding: 80px 20px;
+    gap: 20px;
+}
+
+.product-box {
+    flex: 1 1 500px;
+    max-width: 600px;
+    text-align: center;
+    padding: 40px 20px;
+    color: white;
+}
+
+.product-box h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-box p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+/* Trade In & Card Section */
+.trade-card-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  background-color: #f5f5f7;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+}
+
+.trade-box, .card-box {
+  background-color: #fafafa;
+  border-radius: 15px;
+  padding: 40px 30px;
+  flex: 1 1 400px;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgb(0 0 0 / 0.05);
+}
+
+.trade-box h2, .card-box h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.apple-logo {
+  font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  vertical-align: middle;
+  margin-right: 6px;
+  content: url('apple3.png');
+}
+
+.trade-box p, .card-box p {
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 25px;
+  color: #1d1d1f;
+}
+
+.btn.small {
+  padding: 8px 18px;
+  font-size: 14px;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.trade-box img, .card-box img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  user-select: none;
+}
+
+
+/* âœ… Slideshow CSS */
+.css-slideshow {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.slideshow-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.slideshow-container img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: fade 20s infinite;
+}
+
+.slideshow-container img:nth-child(1) { animation-delay: 0s; }
+.slideshow-container img:nth-child(2) { animation-delay: 2s; }
+.slideshow-container img:nth-child(3) { animation-delay: 4s; }
+.slideshow-container img:nth-child(4) { animation-delay: 6s; }
+/* .slideshow-container img:nth-child(5) { animation-delay: 8s; }
+.slideshow-container img:nth-child(6) { animation-delay: 10s; }
+.slideshow-container img:nth-child(7) { animation-delay: 12s; }
+.slideshow-container img:nth-child(8) { animation-delay: 14s; }
+.slideshow-container img:nth-child(9) { animation-delay: 16s; }
+.slideshow-container img:nth-child(10) { animation-delay: 18s; } */
+
+@keyframes fade {
+  0%   { opacity: 0; }
+  5%   { opacity: 1; }
+  15%  { opacity: 1; }
+  20%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* p{
+    margin-top: 100px;
+    color: black;
+    text-align: center;
+    background-color: gainsboro;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: medium;
+    margin-bottom: px;
+} */
+
+p.lastp{
+    background-color: gainsboro;
+    margin-top: 100px;
+    margin-right: 50px;
+    margin-left: 50px;
+    text-align: center;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: medium;
+}
+
+footer{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+}
